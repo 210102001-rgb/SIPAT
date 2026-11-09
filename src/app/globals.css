@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-page: #05070b;
+  --color-panel: #0b0f16;
+  --color-panel2: #10151f;
+  --color-line: #1e293b;
+  --color-ink: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-ok: #22c55e;
+  --color-warn: #eab308;
+  --color-alert: #f97316;
+  --color-danger: #ef4444;
+  --color-accent: #22d3ee;
+  --color-action: #3b82f6;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar gelap yang senada dengan control room */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-panel);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
